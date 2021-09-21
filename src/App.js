@@ -11,7 +11,7 @@ import './App.css'
 export default class App extends Component {
   render() {
     return (
-        <body>
+        <div className="body">
           
           <div></div>
 
@@ -32,7 +32,7 @@ export default class App extends Component {
 
           <div></div>
 
-        </body>
+        </div>
     )
   }
 }
