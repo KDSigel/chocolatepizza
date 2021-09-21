@@ -1,38 +1,115 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mali:wght@300&display=swap');
+/* add home page styles here */
+*{
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html, body, .root {
+    height: 100%;
+    width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.body {
+    display: grid;
+    grid-template-columns: 1fr 900px 1fr;
+    /* align-items: center; */
+    /* display: flex;
+    flex-direction: column; */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+nav {
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+
 }
 
-.App-link {
-  color: #61dafb;
+nav > img {
+    height: 20px;
+    margin: 1px;
+}  
+header {
+    display: grid;
+    grid-template-columns: 300px 1fr 300px; 
+    align-content: center;
+    margin-bottom: 35px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.top-left {
+    display: flex;
+    flex-direction: row;
+    align-content: flex-end;
+}
+
+.top-left > img {
+    width: 45px;
+    height: 45px;
+    margin-right: 5px;
+    align-self: flex-end;
+}
+
+.best-food {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    text-transform: uppercase;
+    margin: 0;
+    font-size: .70rem;
+}
+
+.article > img {
+    width: 100%
+}
+
+.delicious {
+    font-size: 2rem;
+   font-family: 'Yellowtail', cursive;
+}
+
+.recipe {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* background-image: url(chocopizza.png); */
+    font-family: 'Mali', cursive;
+}
+
+.sub-head   {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.left-side {
+    display: flex;
+    flex-direction: column;
+    align-content: end;
+    font-family: 'Yanone Kaffeesatz', sans-serif;    
+}
+
+.date {
+    text-transform: uppercase;
+    font-size: .9rem;
+    line-height: .5;
+}
+
+.art-title {
+    font-weight: 700;
+    font-size: 3rem;
+    text-transform: none;
+}
+
+.right-side {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-size: .9rem;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    line-height: .5;
+}
+
+.article {
+    margin-top: 20px;
+}
+
+main {
+    margin-top: 45px;
 }
